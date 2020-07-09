@@ -2,6 +2,9 @@ from bottle import run,post,request,response,route
 import os
 import urllib
 
+@post('/test')
+def simple_test():
+    return "Hello World!"
 
 @route('/path',method="post")
 def gen_path_3():
